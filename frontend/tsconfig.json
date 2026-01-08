@@ -4,7 +4,7 @@
 		"target": "ES2022",
 		"verbatimModuleSyntax": true,
 		"allowJs": true,
-		"checkJs": true,
+		"checkJs": false,
 		"esModuleInterop": true,
 		"forceConsistentCasingInFileNames": true,
 		"resolveJsonModule": true,
@@ -13,5 +13,6 @@
 		"strict": true,
 		"moduleResolution": "bundler",
 		"types": ["unplugin-icons/types/svelte"]
-	}
+	},
+	"exclude": ["src/lib/paraglide/**/*"]
 }
