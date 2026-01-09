@@ -130,10 +130,9 @@
 			<ArcaneButton
 				action="create"
 				onclick={() => goto(`/projects/new?templateId=${template.id}`)}
+				customLabel={m.compose_create_project()}
 				class="w-full gap-2 sm:w-auto"
-			>
-				{m.compose_create_project()}
-			</ArcaneButton>
+			/>
 
 			{#if canDownload}
 				<ArcaneButton
@@ -165,10 +164,9 @@
 					disabled={isDeleting}
 					loading={isDeleting}
 					loadingLabel={m.common_action_deleting()}
+					customLabel={m.templates_delete_template()}
 					class="w-full gap-2 sm:w-auto"
-				>
-					{m.templates_delete_template()}
-				</ArcaneButton>
+				/>
 			{/if}
 		</div>
 	</div>
